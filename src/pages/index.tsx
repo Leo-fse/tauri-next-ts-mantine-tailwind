@@ -1,16 +1,41 @@
-import { useState } from "react";
-import { invoke } from "@tauri-apps/api/tauri";
-import Image from "next/image";
-import reactLogo from "../assets/react.svg";
-import tauriLogo from "../assets/tauri.svg";
-import nextLogo from "../assets/next.svg";
+import { Select } from "@mantine/core";
 
 function App() {
 
   return (
-    <div>
-     <h1 className="text-3xl font-bold underline">Hello</h1>
-    </div>
+    <>
+     <h1 className="my-0 text-2xl font-bold underline">Hello</h1>
+     <Select
+      label="Your favorite framework/library"
+      placeholder="Pick one"
+      data={[
+        { value: 'react', label: 'React' },
+        { value: 'ng', label: 'Angular' },
+        { value: 'svelte', label: 'Svelte' },
+        { value: 'vue', label: 'Vue' },
+      ]}
+    />
+    <Select
+      label="Your favorite framework/library"
+      placeholder="Pick one"
+      data={[
+        { value: 'react', label: 'React' },
+        { value: 'ng', label: 'Angular' },
+        { value: 'svelte', label: 'Svelte' },
+        { value: 'vue', label: 'Vue' },
+      ]}
+    />
+    <Select
+      label="Your favorite framework/library"
+      placeholder="Pick one"
+      data={[
+        { value: 'react', label: 'React' },
+        { value: 'ng', label: 'Angular' },
+        { value: 'svelte', label: 'Svelte' },
+        { value: 'vue', label: 'Vue' },
+      ]}
+    />
+    </>
   );
 }
 
